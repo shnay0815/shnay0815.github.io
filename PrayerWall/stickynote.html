@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Fellowship YG Prayer Wall</title>
+	<link rel="stylesheet" href="./sticky.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<body bgcolor="#B3DAFF">
+</head>
+
+<body>
+	<div id="wrapper" class="bgOvrly"></div>
+	<header>
+	 <div class="title">
+
+		<br><h3 style=font-family:courier;>Open Prayer Wall</h3></br>
+		<p style=font-size:11;>FYI: The Prayer You Submit Cannot Be Deleted. It Will Reset Every Week and Changes Cannot Be Made Otherwise!</p>
+
+	 </div>
+	</header>
+
+	<section id="content">
+		<section id="stkyOvrly" class="ovrly hidden">
+			<textarea class="txtBox"></textarea>
+			<input id="crteStkyBtn" class="crteBtn btn ntActv" type="button" value="Create" />
+			<input id="cnclStkyBtn" class="cnlBtn btn" type="button" value="Cancel" />
+		</section>
+
+		<input id="addBtn" value=" Click here to add a Prayer" type="button" />
+		<div align="right">
+				<input id="clnStorge" style="color:transparent; background-color:transparent; border:transparent;" value="Clear all Prayer" type="button" />
+		</div>
+
+		<section>
+			<ul id="stkyNts" class="stkyCntr">
+			</ul>
+		</section>
+	</section>
+
+	<script src="./sticky.js"></script>
+</body>
+</html>
