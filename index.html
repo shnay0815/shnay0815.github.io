@@ -50,9 +50,15 @@
 <script language=JavaScript>
 {
   var a="jesus";
+  
+  function forceLower(document.a.c) 
+{
+  document.a.c.value = document.a.c.value.toLowerCase();
+}
+  
   function check()
   {
-    if (document.a.c.value.toLowerCase() == a)
+    if (document.a.c.value == a)
     {
       //document.location.href="shnay0815.github.io"+document.a.c.value+".html";
       document.location.href=document.a.c.value+".html";
