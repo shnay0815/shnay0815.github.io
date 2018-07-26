@@ -13,12 +13,10 @@
           "\nDefinitely the smartest as well.",
           "\nWho is this greatest man alive?" // Do not add a comma (,) at the end of the last row of text.
         );
-
         var speed=1;
         var index=0; text_pos=0;
         var str_length=tl[0].length;
         var contents, row;
-
         function password()
         {
           contents='';
@@ -26,12 +24,10 @@
           while(row<index)
           contents += tl[row++] + '\r\n';
           document.forms[0].elements[0].value = contents + tl[index].substring(0,text_pos) + "_";
-
           if(text_pos++==str_length)
           {
             text_pos=0;
             index++;
-
             if(index!=tl.length)
             {
               str_length=tl[index].length;
@@ -52,7 +48,7 @@
   var a="jesus";
   function check()
   {
-    if (document.a.c.value == a)
+    if (document.a.c.value.toLowerCase() == a)
     {
       //document.location.href="shnay0815.github.io"+document.a.c.value+".html";
       document.location.href=document.a.c.value+".html";
